@@ -6,13 +6,9 @@
                 <style>
                 body  {
                   background-image: url("images/img5.jpg");
-                 
                 }
                 </style>
-                
          </head>
-        
-  
     <body>
     <?php
     session_start();
@@ -25,11 +21,6 @@
                 ?>
             </div>
         <?php } ?>
-
-
-
-
-       
         <div class="bgimg">
             <div class="centerdiv">
                 <img src="images/img2.jpg" id="profilepic" height="120px" width="120px">

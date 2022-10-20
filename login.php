@@ -33,20 +33,13 @@ if (isset($_POST['reg_user']))
             header("location: home.html");
             echo "<br>";
             echo "shaiful";
-
         }
         else
         {
             echo "ssyou have not successfully login";
-            header("location: sinup.php");
-            
-        
-            
-            
+            header("location: sinup.php");   
         }
-    }
-   
-
+    } 
 }
 else if(isset($_POST['forget']))
 {

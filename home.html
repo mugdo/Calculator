@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <title>CSS Image Hover Effects</title>
-            <link rel="stylesheet" type="text/css" href="CSS/style.css">
-            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            rel="stylesheet""https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-            rel="stylesheet">
-            <?php include(login.php)
+        <title>CSS Image Hover Effects</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet""https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+        <?php include(login.php)
             
     </head>
     <body>
-        
-            
-            <div class="head1">
-                    <ul>
-                           <li class="message" onclick="wellcomeMsg()"><a href="connect.php">About</a></li>
-                            <li><a href="join.html">join Us</a></li>
-                             <li class="login"><a href="sinup.php">Login</a></li>
-                            <h1 id="Abacus">Abacus<br></h1>
-                            <h6>Be a abacus</h6>
-                           
-                            
-                        </ul>
-
-            </div>
-            <div class="head2">
-                <ul>    
-                    <li><a href="Number.html">Number Theory</a></li>
-                    <li><a href="Gemetry.html">Gemetry</a></li>
-                    <li><a href="Trigonometry.html">Trigonometry</a></li>
-                    <li><a href="Everyday.html">Everyday Math</a></li>
-                    <li><a href="QuickTour.html">Quick Tour</a></li>
-                    <li><a href="home.html">Home</a></li>
+        <div class="head1">
+                <ul>
+                   <li class="message" onclick="wellcomeMsg()"><a href="connect.php">About</a></li>
+                    <li><a href="join.html">join Us</a></li>
+                     <li class="login"><a href="sinup.php">Login</a></li>
+                    <h1 id="Abacus">Abacus<br></h1>
+                    <h6>Be a abacus</h6>
                 </ul>
-            </div>
-            <div class="query">
-                <p>We hope your visit to <a href="home.html">Abacus</a> brings you a greater love of mathematics, both for its beauty and its power to help solve everyday problems</p>
-            </div>
-            <?php
-              if($_SESSION[user]==true)
-              {
-                
-                header("location: join.html");
-              }
-            ?>
 
+        </div>
+        <div class="head2">
+            <ul>    
+                <li><a href="Number.html">Number Theory</a></li>
+                <li><a href="Gemetry.html">Gemetry</a></li>
+                <li><a href="Trigonometry.html">Trigonometry</a></li>
+                <li><a href="Everyday.html">Everyday Math</a></li>
+                <li><a href="QuickTour.html">Quick Tour</a></li>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="query">
+            <p>We hope your visit to <a href="home.html">Abacus</a> brings you a greater love of mathematics, both for its beauty and its power to help solve everyday problems</p>
+        </div>
+        <?php
+          if($_SESSION[user]==true)
+          {
 
-        
-
-
+            header("location: join.html");
+          }
+        ?>
     </body>
 </html>
 ?>
 <script>
-        function wellcomeMsg()
-               {
-                    
-                    alert("if you are not login,please Login first...Thank You");
-                }
+   function wellcomeMsg()
+   {
+      alert("if you are not login,please Login first...Thank You");
+    }
                          
-     </script>
+</script>
